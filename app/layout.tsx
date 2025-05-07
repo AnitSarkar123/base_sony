@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import { Toaster } from "@/components/ui/toaster";
-import ProgressBarProviders from "@/providers/ProgressBarProvider";
+
+// import ProgressBarProviders from "@/providers/ProgressBarProvider";
 import ReactQueryProvider from "@/providers/ReactQueryProvider";
 import JotaiProvider from "@/providers/JotaiProvider";
 import CustomStyleProvider from "@/providers/CustomStyleProvider";

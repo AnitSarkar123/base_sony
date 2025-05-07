@@ -13,7 +13,7 @@ import { useAtom } from "jotai";
 import { carPaginationAtom } from "@/jotai/carsAtom";
 import { useFilter } from "@/hooks/useFilter";
 import { useCars } from "@/hooks/useCars";
-import { delay } from "@/lib/utils";
+// import { delay } from "@/lib/utils";
 import Loader from "@/components/Loader";
 
 export const ModelFilterIcon = () => {

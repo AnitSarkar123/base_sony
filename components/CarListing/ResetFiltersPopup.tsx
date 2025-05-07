@@ -1,11 +1,13 @@
 "use client";
 
-import { useSetAtom } from "jotai";
-import { carPaginationAtom } from "@/jotai/carsAtom";
-import { useFilter } from "@/hooks/useFilter";
-import { useCars } from "@/hooks/useCars";
-import { delay } from "@/lib/utils";
+// import { useSetAtom } from "jotai";
+// import { carPaginationAtom } from "@/jotai/carsAtom";
+// import { useFilter } from "@/hooks/useFilter";
+// import { useCars } from "@/hooks/useCars";
+// import { delay } from "@/lib/utils";
 import { useCallback, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { RotateCcw } from "lucide-react";
 
 interface ResetFiltersPopupProps {
   onReset: () => void;

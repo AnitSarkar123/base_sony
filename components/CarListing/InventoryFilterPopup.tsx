@@ -8,7 +8,7 @@ import { carPaginationAtom } from "@/jotai/carsAtom";
 import { useFilter } from "@/hooks/useFilter";
 import { useCars } from "@/hooks/useCars";
 import { delay } from "@/lib/utils";
-import Loader from "@/components/Loader";
+// import Loader from "@/components/Loader";
 
 interface InventoryFilterPopupProps {
   open: boolean;
@@ -50,7 +50,11 @@ export const InventoryFilterPopup = ({
         <DialogHeader>
           <DialogTitle className="flex items-center justify-between text-lg">
             {activeFilter}
-            <button onClick={() => onOpenChange(false)} className="rounded-full p-1 hover:bg-gray-100">
+            <button 
+              onClick={() => onOpenChange(false)} 
+              className="rounded-full p-1 hover:bg-gray-100"
+              aria-label="Close filter"
+            >
               <X className="h-5 w-5" />
             </button>
           </DialogTitle>
