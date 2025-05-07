@@ -15,6 +15,7 @@ import {
   BadgeCheck
 } from "lucide-react";
 import { InventoryFilterPopup } from "./InventoryFilterPopup";
+// import { filter } from "lucide-react";
 
 const FILTER_ICONS = {
   condition: <BadgeCheck className="h-5 w-5" />,
@@ -99,10 +100,10 @@ export const InventoryFilterIcons = () => {
             <InventoryFilterPopup
               open={activeFilter === filter.name}
               onOpenChange={(open) => setActiveFilter(open ? filter.name : null)}
-              filter={filter}
-              selectedValues={selectedValues}
-              onFilterChange={handleFilterChange}
-              label={FILTER_LABELS[filterKey]}
+               filter={filter}
+               selectedValues={selectedValues}
+               onFilterChange={handleFilterChange}
+               label={FILTER_LABELS[filterKey]}
             />
           </div>
         );
